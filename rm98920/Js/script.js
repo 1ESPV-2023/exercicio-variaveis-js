@@ -33,4 +33,12 @@ h1element.addEventListener("mouseleave",()=>{
 })
  
 
-//30-03-23
+//OPERADOR TERNÁRIO ( ? )
+// REalizar uma opreção de paridade utilizando o operador ( % ) módulo.
+
+let num1 = 10;
+let num2 = 5;
+
+let resultado = !(10%5) ? "PAR" : "IMPAR";
+// Apresentando o resultado com interpolação!
+console.log(`O número ${num1} é ${resultado}`)
