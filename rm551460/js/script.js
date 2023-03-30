@@ -1,17 +1,25 @@
+// conle.log("Alô mundo!")
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-<script src="./script.js"></script>
+const h1Element = document.getElementById("meu-titulo")
 
-</body>
-</html>
+//Atrelando ao h1 um event de click!
+h1Element.addEventListener("click", ()=>{
+    alert("Agora com superpoderes!")
+})
 
+//Através do enveto de mouse que passa sobre o elemento 
+//Altere a cor de fundo do elemento h1 a cor do texto!
 
+h1Element.addEventListener("mouseover", ()=>{
+    h1Element.style.backgroundColor = "red";
+    h1Element.style.fontSize = "32px";
+    h1Element.style.color = "white";
+
+})
+
+h1Element.addEventListener("mouseleave", ()=>{
+    h1Element.style.backgroundColor = "white";
+    h1Element.style.fontSize = "32px";
+    h1Element.style.color = "black";
+
+})
