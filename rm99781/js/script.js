@@ -4,7 +4,6 @@ const h1Element = document.getElementById("meu-titulo");
 
 h1Element.addEventListener("click", ()=>{
     alert("Hello World");
-
 });
 
 //Através do evento de mouse que passa sobre o elemento
@@ -16,7 +15,6 @@ h1Element.addEventListener("mouseover", ()=>{
     h1Element.style.backgroundColor = "red";
     h1Element.style.fontSize = "64px";
     h1Element.style.color = "white";
-
 });
 
 //Quando o mouse sai do bloco, volta ao default
@@ -28,6 +26,14 @@ h1Element.addEventListener("mouseleave",()=>{
 
 
 //Operador ternário (?)
+//Realizar uma operação de paridade utilizando o operador 'módulo'
+
+let num1 = 10;
+let num2 = 5;
+
+let resultado = 10%5 ? "PAR" : "IMPAR"
+//apresentando o resultado com interpolação!
+console.log(`O número ${num1} é ${resultado}.`);
 
 
 
