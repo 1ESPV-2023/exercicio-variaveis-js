@@ -31,9 +31,9 @@ h1Element.addEventListener("mouseleave",()=>{
 let num1 = 10;
 let num2 = 5;
 
-let resultado = 10%5 ? "PAR" : "IMPAR"
+let resultado = !(10%5) ? "PAR" : "IMPAR";
 //apresentando o resultado com interpolação!
-console.log(`O número ${num1} é ${resultado}.`);
+console.log(`O número ${num2} é ${resultado}.`);
 
 
 
